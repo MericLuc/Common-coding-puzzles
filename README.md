@@ -1,4 +1,6 @@
-# ![banner](banner.png)
+<p align="center">
+  <img width="800" height="300" src="banner.png">
+</p>
 
 ## What is this place about ?
 
