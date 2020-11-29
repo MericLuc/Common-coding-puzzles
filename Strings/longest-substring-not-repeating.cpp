@@ -3,6 +3,7 @@
  *               repeating character.
  */
 
+// Temporal complexity O(n) | spatial complexity O(1)
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
