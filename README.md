@@ -1,3 +1,5 @@
+![Language](https://img.shields.io/badge/language-C++14-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
+
 <p align="center">
   <img width="800" height="300" src="banner.png">
 </p>
