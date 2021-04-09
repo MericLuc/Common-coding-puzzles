@@ -16,8 +16,8 @@ V<V<int>> mergeOverlappingIntervals(V<V<int>> in) {
 	V<V<int>  > out;
 	V<V<int>* > tmp;
 	std::sort( std::begin(in), 
-						 std::end  (in), 
-						 [](auto v1, auto v2) { return v1[0] < v2[0]; } );
+		   std::end  (in), 
+		   [](auto v1, auto v2) { return v1[0] < v2[0]; } );
 	
 	V<int>* curInt = &in[0];
 	tmp.push_back( curInt );
@@ -28,9 +28,9 @@ V<V<int>> mergeOverlappingIntervals(V<V<int>> in) {
 	}
 	
 	std::transform( std::begin(tmp), 
-								  std::end  (tmp), 
-								  std::back_inserter(out),
-								  [](auto curPtr) { return *curPtr; } );
+			std::end  (tmp), 
+			std::back_inserter(out),
+			[](auto curPtr) { return *curPtr; } );
   return out;
 }
 
@@ -45,8 +45,8 @@ using V = std::vector<T>;
 // O(nlog(n)) time | O(n) space
 V<V<int>> mergeOverlappingIntervals(V<V<int>> in) {
 	std::sort( std::begin(in), 
-						 std::end  (in), 
-						 [](auto v1, auto v2) { return v1[0] < v2[0]; } );
+	           std::end  (in), 
+	           [](auto v1, auto v2) { return v1[0] < v2[0]; } );
 	
 	V<V<int>  > out{ in[0] };
 	
